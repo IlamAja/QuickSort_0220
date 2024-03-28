@@ -78,6 +78,22 @@ void q_short(int low, int high)
  q_short(low, j - 1);
 
  q_short(j + 1, high);
+
+
+}
+
+void display(){
+    cout << "\n---------------" << endl;
+    cout << "Array yang telah diurutkan" << endl;
+    cout << "\n---------------" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    cout << "\n\nNomor perbandingan: " << cmp_count << endl;
+    cout << "Nomor pergerakan data: " << mov_count << endl;
 }
 
 int main(){
