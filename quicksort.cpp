@@ -97,5 +97,18 @@ void display(){
 }
 
 int main(){
+    char ch;
 
+    do
+    {
+        input();
+        q_short(0, n -1);
+        display();
+        cout << "\n\nApakah masih mau melanjutkan? (y/n): ";
+        cin >> ch;
+        if (ch == 'n' || ch == 'N' )
+        break;
+        
+    } while (true);
+    
 }
